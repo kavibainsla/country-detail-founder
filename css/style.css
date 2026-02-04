@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #66eacbc4, #67a24b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #ffffff;
+  width: 450px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.search-box button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #667eea;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #5a67d8;
+}
+
+.result img {
+  width: 120px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.result h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.result p {
+  color: #555;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.buttons button {
+  width: 100%;
+  padding: 10px;
+  background: #764ba2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: #6b46c1;
+}
+
+/* ===== All Countries Page ===== */
+
+.countries-container {
+  max-width: 1500px;
+  margin: auto;
+  padding: 20px;
+}
+
+.countries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.country-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.country-card:hover {
+  transform: scale(1.05);
+}
+
+.country-card img {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.country-card p {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
